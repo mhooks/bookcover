@@ -1,0 +1,233 @@
+@font-face {
+  font-family: 'Arial Regular';
+  src: url(../fonts/Arial.ttf);
+}
+
+body {background: tan;}
+p {font-family: 'Arial';}
+
+
+
+.book {
+	width: 580px;
+	height: 800px;
+	background: black;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+  padding-right: 30px;
+  transform: translate(-50%,-50%);
+}
+.title {
+  src: url("../img/mg1.png");
+  padding-right: 30px;
+  filter: blur(0px);
+}
+.title:hover {
+	filter: blur(10px);
+	transition: filter .5s;
+}
+
+
+.author {
+  font-family: 'Arial';
+  font-size: 1.3em;
+  font-weight: bold;
+  color: limegreen;
+  position: absolute;
+  bottom: 64%;
+  left: 58%;
+  text-align: right;
+  padding-right: 25px;
+}
+.bottom {
+  font-family: 'Arial';
+  font-size: .8em;
+  font-weight: bold;
+  color: white;
+  letter-spacing: .15em;
+  padding-left: 15px;
+  position: absolute;
+  bottom: 0px;
+  left: 30px;
+}
+
+.square {
+  border-radius: 30px;
+  position: absolute;
+}
+
+.out {
+  width: 440px;
+  height: 400px;
+  border: purple solid 45px;
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  transform: translate(-50%,0%);
+}
+
+.in {
+  width: 458px;
+  height: 420px;
+  background: indigo;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+}
+
+.circle {
+  border-radius: 100%;
+}
+
+.outer {
+  width: 420px;
+  height: 390px;
+  border: purple solid 26px;
+  position: absolute;
+  left: -10px;
+  top: -10px;
+}
+
+.eyeup {
+  width: 292px;
+	height: 290px;
+  border: purple solid 27px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(135deg);
+	border-radius: 75% 0;
+}
+
+
+@keyframes eye_fade {
+	0%		{bottom: 0px; left: 212px; opacity: 1;}
+  50%   {bottom: 0px; left: 212px; opacity: 0;}
+	100%	{bottom: 0px; left: 212px; opacity: 1;}
+}
+.eye {
+  width: 300px;
+	height: 300px;
+  border: purple solid 26px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+	border-radius: 75% 0;
+  animation: eye_fade 2s linear infinite;
+  animation-fill-mode: forwards;
+}
+.pupil {
+  width: 208px;
+  height: 212px;
+  border: purple solid 30px;
+  position: absolute;
+  border-radius: 100%;
+  right: 21px;
+  bottom: 15px;
+}
+
+
+
+.dot {
+  width: 220px;
+  height: 220px;
+  background: black;
+  position: absolute;
+  border-radius: 100%;
+  right: 40px;
+  bottom: 35px;
+}
+
+
+@keyframes r1 {
+	0%		{opacity: 1;}
+  50%   {opacity: 0;}
+	100%	{opacity: 1;}
+}
+.ring1 {
+  width: 180px;
+  height: 180px;
+  border: solid 5px limegreen;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  animation: r1 1s linear infinite;
+  animation-fill-mode: forwards;
+}
+
+    @keyframes r2 {
+    	0%		{opacity: 1;}
+      50%   {opacity: 0;}
+    	100%	{opacity: 1;}
+
+    }
+    .ring2 {
+      width: 160px;
+      height: 160px;
+      border: solid 5px limegreen;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 100%;
+      animation: r2 1.5s linear infinite;
+      animation-fill-mode: forwards;
+    }
+
+          @keyframes r3 {
+          	0%		{opacity: 1;}
+            50%   {opacity: 0;}
+          	100%	{opacity: 1;}
+          }
+          .ring3 {
+            width: 140px;
+            height: 140px;
+            border: solid 5px limegreen;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 100%;
+            animation: r3 2s linear infinite;
+            animation-fill-mode: forwards;
+          }
+
+                @keyframes r4 {
+                	0%		{opacity: 1;}
+                  50%   {opacity: 0;}
+                	100%	{opacity: 1;}
+                }
+                .ring4 {
+                  width: 120px;
+                  height: 120px;
+                  border: solid 5px limegreen;
+                  position: absolute;
+                  left: 50%;
+                  top: 50%;
+                  transform: translate(-50%, -50%);
+                  border-radius: 100%;
+                  animation: r4 2.5s linear infinite;
+                  animation-fill-mode: forwards;
+                }
+
+                          @keyframes r5 {
+                          	0%		{opacity: 1;}
+                            50%   {opacity: 0;}
+                          	100%	{opacity: 1;}
+                          }
+                          .ring5 {
+                            width: 100px;
+                            height: 100px;
+                            border: solid 5px limegreen;
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            border-radius: 100%;
+                            animation: r5 2.8s linear infinite;
+                            animation-fill-mode: forwards;
+                          }
